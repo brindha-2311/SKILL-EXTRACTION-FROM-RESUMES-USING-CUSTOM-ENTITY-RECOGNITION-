@@ -21,26 +21,6 @@ This project presents a cloud-based **Custom Named Entity Recognition (NER)** sy
 - Entity Type Trained: `SKILLS`
 ---
 
-## 🧠 Model Workflow
-
-1. **Data Preprocessing**
-   - Download JSON resumes
-   - Convert to plain `.txt` files
-   - Upload to S3 bucket (`resume-recognizer-bucket`)
-
-2. **Training**
-   - Custom Entity Recognizer trained using:
-     - `train/` folder with resume `.txt` files
-     - `entity_list.csv` (mapping skills to the `SKILLS` entity)
-   - Autosplit used to separate train/test
-   - Took ~48 minutes to train with ~13k documents
-
-3. **Testing**
-   - Uploaded unseen resume text files to S3
-   - Created **analysis jobs** using AWS Comprehend
-   - Results generated as `.tar.gz` with JSON inside
----
-
 ## 📊 Evaluation Metrics
 
 | Metric     | Value   |
