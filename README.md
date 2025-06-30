@@ -1,9 +1,10 @@
 # SKILL-EXTRACTION-FROM-RESUMES-USING-CUSTOM-ENTITY-RECOGNITION-
+
 ## 📄 Project Overview
 
 This project presents a cloud-based **Custom Named Entity Recognition (NER)** system using **Amazon Comprehend** to extract **skills** from resumes automatically. Designed to streamline the recruitment process, this model identifies key technical and soft skills such as programming languages, tools, certifications, and more.
----
 
+---
 ## 🔧 Tools & Technologies
 
 - **Amazon Comprehend** – for training and deploying the custom entity recognizer
